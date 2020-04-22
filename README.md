@@ -10,6 +10,7 @@ momento la información actualizada tenía, según las autoridades, 5,014 casos 
 como positivos, 332 defunciones atribuibles a esta enfermedad, y las “más de 37 mil personas 
 que hasta el momento han sido ya estudiadas y entradas a un protocolo de investigación de 
 todos estos casos en relación a COVID-19 en México”. (2) 
+
 Los investigadores rápidamente aprovecharon la nueva información para ofrecer 
 visualizaciones de diversos tipos, mostrando los patrones de dispersión territorial. Se puede 
 estudiar uno de los principales retos que se enfrentará durante las próximas semanas por 
@@ -17,6 +18,7 @@ motivo de la fragmentación del sistema de salud. Posiblemente la reticencia má
 autoridades de salud pública para liberar esta información de los casos individuales de pruebas 
 de COVID19 que se han realizado tiene que ver con la posibilidad de una interpretación o uso 
 poco cuidadoso de la información por analistas que no son expertos en epidemiología.
+
 Es importante aclarar que el ejercicio estadístico no permite conocer la causalidad de los 
 procesos de salud pública involucrados en esta epidemia, pues como se repite con frecuencia, 
 una correlación no es evidencia de causación. El ejemplo más claro es pensar en el coeficiente 
@@ -35,6 +37,7 @@ intervención médica salva vidas y se podría estimar la magnitud del efecto. P
 la relación entre intubación o terapia intensiva debería ser negativa en un modelo causalmente 
 identificado, este es exactamente el signo contrario que el que arroja una estimación simplista 
 de carácter más bien inductivo. 
+
 No existe una manera contundente pare resolver el problema de variables omitidas. Pero se 
 pueden realizar algunos procesos estadísticos, siempre sujetos a error, que permitan atenuar 
 este problema mejorando el diseño de un estudio estadístico, buscando restringir la 
@@ -46,7 +49,7 @@ sido entubados en un escenario contra-factual, pero que no fueron entubados, por
 exógenas al padecimiento. 
 
 
-1 La base está disponible en la siguiente liga (consultada el 17 de abril): 
+(1) La base está disponible en la siguiente liga (consultada el 17 de abril): 
 https://datos.gob.mx/busca/dataset/informacion-referente-a-casos-covid-19-en-mexico
 Las características y fuente de la información según el portal de datos abiertos:
 Información del Sistema de Vigilancia Epidemiológica de Enfermedades Respiratoria Viral, que informan 
@@ -60,10 +63,11 @@ De acuerdo al diagnóstico clínico de ingreso, se considera como un paciente am
 La base no incluye la evolución durante su estancia en las unidades médicas, a excepción de las 
 actualizaciones a su egreso por parte de las unidades de vigilancia epidemiológica hospitalaria o de 
 jurisdicciones sanitarias en el caso de defunciones.
-2
-José Luis Alomía Zegarra, Director General de Epidemiología, versión esteneográfica de la conferencia de prensa 
+
+(2) José Luis Alomía Zegarra, Director General de Epidemiología, versión esteneográfica de la conferencia de prensa 
 del 13 de abril (https://www.gob.mx/presidencia/es/articulos/version-estenografica-conferencia-de-prensa-
 informe-diario-sobre-coronavirus-covid-19-en-mexico-240239?idiom=es).
+
 Latest commit
 523a0c7
 3 minutes ago
