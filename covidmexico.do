@@ -269,7 +269,7 @@ margins sector3, over(covid19) at(edad = (20 30 40 50 60 70 80 90) sexo=1 intuba
 marginsplot , bydimension(covid19) byopt(ti("Defunción de Paciente No Grave") 
 	subti("Mujer sin pneumonía, ambulatoria, sin intervenciones")) 
 	xti("Edad") yti("Probabilidad Estimada") ;
-graph save Graph "SectorNoGrave.gph", replace '
+graph save Graph "SectorNoGrave.gph", replace ;
 margins state, over(covid19) at(sexo=1 intubate=0 icu=0 hospital=0 pneumonia=0) ;
 marginsplot , bydimension(covid19) byopt(ti("Defunción de Paciente No Grave") 
 	subti("Mujer sin pneumonía, ambulatoria, sin intervenciones")) 
@@ -337,4 +337,4 @@ graph combine "Asma.gph"
 graph save Graph "Comorbilidad.gph", replace ;
 
 #delimit cr
-save "covid19.dta", replace
+save "covidmexico.dta", replace
