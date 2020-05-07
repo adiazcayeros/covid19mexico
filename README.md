@@ -1,6 +1,8 @@
 # covid19mexico
 Analysis of covid19 individual level cases and tested patients 
 
+Files labeled with no.7 have the updated information from May 5 with more than 110 thousand patients
+
 En un importante ejercicio de transparencia, esencial en la actual crisis, las autoridades 
 sanitarias del Gobierno Federal en México liberaron el 14 de abril una base de datos llamada 
 “Información referente a casos COVID-19 en México”. (1) Esta información es presumiblemente la 
