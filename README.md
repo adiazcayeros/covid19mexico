@@ -5,9 +5,6 @@ Analysis of covid19 individual level cases and tested patients
 
 Files labeled with no.11 have the updated information from May 23 with more than 215,656 patients
 
-![CFR by Sector Grave](/SectorGrave11.png)
-![CFR by Sector No Grave](/SectorNoGrave11.png)
-
 En un importante ejercicio de transparencia, esencial en la actual crisis, las autoridades 
 sanitarias del Gobierno Federal en México liberaron el 14 de abril una base de datos llamada 
 “Información referente a casos COVID-19 en México”. (1) Esta información es presumiblemente la 
@@ -17,6 +14,9 @@ momento la información actualizada tenía, según las autoridades, 5,014 casos 
 como positivos, 332 defunciones atribuibles a esta enfermedad, y las “más de 37 mil personas 
 que hasta el momento han sido ya estudiadas y entradas a un protocolo de investigación de 
 todos estos casos en relación a COVID-19 en México”. (2) 
+
+
+![CFR por Comorbilidad](/Comorbilidad11.png)
 
 Los investigadores rápidamente aprovecharon la nueva información para ofrecer 
 visualizaciones de diversos tipos, mostrando los patrones de dispersión territorial. Se puede 
@@ -45,6 +45,9 @@ la relación entre intubación o terapia intensiva debería ser negativa en un m
 identificado, este es exactamente el signo contrario que el que arroja una estimación simplista 
 de carácter más bien inductivo. 
 
+![CFR by Sector Grave](/SectorGrave11.png)
+![CFR by Sector No Grave](/SectorNoGrave11.png)
+
 No existe una manera contundente pare resolver el problema de variables omitidas. Pero se 
 pueden realizar algunos procesos estadísticos, siempre sujetos a error, que permitan atenuar 
 este problema mejorando el diseño de un estudio estadístico, buscando restringir la 
@@ -55,6 +58,8 @@ entubamiento que sean una especie de experimento natural, a saber, casos que pod
 sido entubados en un escenario contra-factual, pero que no fueron entubados, por razones 
 exógenas al padecimiento. 
 
+![Residual CFR by Entidad Grave](/EntidadGrave11.png)
+![Residual CFR by Entidad No Grave](/EntidadNoGrave11.png)
 
 (1) La base está disponible en la siguiente liga (consultada el 17 de abril): 
 https://datos.gob.mx/busca/dataset/informacion-referente-a-casos-covid-19-en-mexico
