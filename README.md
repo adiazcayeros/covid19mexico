@@ -1,6 +1,34 @@
 # covid19mexico
 Analysis of covid19 individual level cases and tested patients 
 
+Since April 14 I have been keeping track of the data released by the Federal Government of Mexico of
+information regarding COVID-19 tests for patients seeking care in the national health system, including
+both public and private hospitals and clinics. The database has been growing very quickly, as the 
+testing capacity of the Mexican government has been ramped up. 
+
+As or May 23 the data includes almost 216 thousand cases that form the basis of study for the federal 
+strategy. It is important to note that this data has been readily released by the federal government 
+updated every day, and there is no reason to believe it is any different from the data they have been
+using to build their epidemiological models.
+
+The graphs are the estimated CFR for both positive and negative (or pending) test patients, according to 
+various correlates also included in the dataset. It is very important to note that finding a correlation
+in this type of data is no evidence of a causal relationship. This should be particularly clear when 
+considering that intubation, hospital care in an ICU or having an initial diagnosis of pneumonia are all 
+positively correlated with death, but that cannot be interpreted as meaning that urgent care interventions
+increase the likelihood of dying: the relationship reveals the very strong selection effects that prevail
+throughout all this data: a patient only enters the sample if she is seeking care, and more seriously ill
+patients are more likely to require extraordinary measures, but they may still die, notwithstanding the care
+they receive.
+
+I am not particularly interested or competent to analyze the medical aspects of the comorbidity factors. However, 
+including them in a statistical model is important because they are a large part of what accounts for an
+eventual fatality. What interests me are the differences in institutional performance as exhibited by state
+level fixed effects and the institutional makeup of health institutions in Mexico.
+
+Although more sophisticated modelling choices are possible, the simple logits allow for a clear visualization of 
+the main patterns and some indication of strong differential institutional performance.
+
 ![CFR Age and Gender](/Demography11.png)
 
 Files labeled with no.11 have the updated information from May 23 with more than 215,656 patients
