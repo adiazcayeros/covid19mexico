@@ -1,10 +1,12 @@
 # covid19mexico
 Analysis of covid19 individual level cases and tested patients 
 
+![CFR Age and Gender](/Demography11.png)
+
 Files labeled with no.11 have the updated information from May 23 with more than 215,656 patients
 
-![CFR by Sector Grave](/SectorGrave11.jpg)
-![CFR by Sector Grave](/SectorNoGrave11.jpg)
+![CFR by Sector Grave](/SectorGrave11.png)
+![CFR by Sector No Grave](/SectorNoGrave11.png)
 
 En un importante ejercicio de transparencia, esencial en la actual crisis, las autoridades 
 sanitarias del Gobierno Federal en México liberaron el 14 de abril una base de datos llamada 
