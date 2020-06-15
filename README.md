@@ -1,18 +1,18 @@
 # Case Mortality of COVID-19 patients in Mexico 
 
-Since April 14 I have been keeping track of the data released by the Federal Government of Mexico of
-information regarding COVID-19 tests for patients seeking care in the national health system, including
+Since April 14 I have been keeping track of the official data released by the Federal Government of Mexico of
+the information regarding COVID-19 tests for patients seeking care in the national health system, including
 both public and private hospitals and clinics. The database has been growing very quickly, as the 
 testing capacity of the Mexican government has been ramped up. The database is updated regularly in the 
-datos abiertos platform of the Federal Government, where it is likely to be kept permanently. There is
+Datos Abiertos platform of the Federal Government, where it is likely to be kept permanently. There is
 a repository of every daily dataset in the Secretaria de Salud at the following link: https://www.gob.mx/salud/documentos/datos-abiertos-bases-historicas-direccion-general-de-epidemiologia
 
 As or June 11 the dataset includes more than 381 thousand cases that form the basis of study for the federal 
-strategy. It is important to note that this data has been readily released by the federal government 
+strategy. It is important to note that this data has been duly released by the federal government 
 and updated every day, and there is no reason to believe it is any different from the data they have been
-using to build their epidemiological models. It does not include infected individuals who do not seek care, and given the relative paucity of testing in Mexico, it is likely to have very few asymptomatic cases.
+using to build and assess their epidemiological models. It does not include infected individuals who do not seek care, and given the relative paucity of testing in Mexico, it is likely to have very few asymptomatic cases.
 
-The severity of COVID19 in Mexico can be measured, albeit imperfectly, through what is known as the Case Fatality Ratio (CFR). The CDC defines Symptomatic CFR as follows:
+The severity of COVID19 in Mexico can be measured, albeit imperfectly, through what is known as the Case Fatality Ratio (CFR). This is not a proper mortality rate from the disease, because it has a very imperfect denominator. The CDC defines Symptomatic CFR as follows:
 
 	Symptomatic Case Fatality Ratio: The number of symptomatic individuals who die of the disease among all 
 	individuals experiencing symptoms from the infection. This parameter is not necessarily equivalent to 
@@ -21,8 +21,11 @@ The severity of COVID19 in Mexico can be measured, albeit imperfectly, through w
 	reflects the existing standard of care and may be affected by the introduction of new therapeutics.
 (https://www.cdc.gov/coronavirus/2019-ncov/hcp/planning-scenarios.html).
 
-This repository contains STATA code and graphs that allow a visualization of a simple statistical model (logit) of the public 
-information on COVID19 testing in Mexico. The focus in terms of the dependent variable is the Case Fatality Ratio, which can be readily estimated under the assumption that each case is independent and identically distributed. A large number of patients (16,498) had died by June 11, although not all of them had tested positive to COVID19. This yields a CFR of 5.44 percent, although it is critical to understand that the level of testing in Mexico has been lower than in most other countries. Although the specificity of the tests available is very high, there are reasons to believe that the sensitivity (the possibility of false negatives) is relatively high, given the procedures for specimen collection. Hence it is important to analyze all the information of deaths, since even those that are pending or negative exhibit a larger CFR than the typical influenza like illness. The level of positivity in the dataset is 33.36 percent, suggesting that a large number of asynomatic patients may be present in the general population.
+In this repository I have been relasing STATA code and graphs that allow a visualization of a simple statistical model (logit) of the public information on COVID19 testing in Mexico. The focus in terms of the dependent variable is the Case Fatality Ratio, which can be readily estimated under the assumption that each case is independent and identically distributed. A large number of patients (16,498) had died by June 11, although not all of them had tested positive to COVID19. This yields a CFR of 5.44 percent, although it is critical to understand that the level of testing in Mexico has been lower than in most other countries. 
+
+Although the specificity of the tests available is very high, there are reasons to believe that the sensitivity (the possibility of false negatives) is relatively high, given the procedures for specimen collection. Hence it is important to analyze all the information of deaths, since even those that are pending or negative exhibit a larger CFR than the typical influenza like illness. The level of positivity in the dataset is 33.36 percent, suggesting that a large number of asynomatic patients may be present in the general population.
+
+I will try to update the graphs and analysis, as I have done in the past, more or less on a weekly basis.
 
 # Data source and patients included under study
 
@@ -40,29 +43,29 @@ Perhaps the most important shortcoming of the public database is that it does no
 
 The first thing to note regarding the Mexican database is that it exhibits a very severe disease as compared, for example to US planning scenario parameters considered by the CDC. The arrival of patients seeking care is not too different from that of the US: 43.3 percent of the patients seek care after less than two days with symptoms, 46.5 percent within 3 to 7 days, and only 10.2 percent come to seek care after 8 days of symptoms. However, the time to hospitalization is very short: the average patient in Mexico, regardless of age, is hospitalized in 3.6 days from the onset of disease (standard deviation 3.5 days), while this figure is about seven days. We do not know in the Mexican public data how many days patients are hospitalized, nor how many days it takes for them to be transferred to an ICU, although this information must be part of the modelling exercises being performed by Mexican scientists to estimate hospital bed and ICU demand. In the US more than 20 percent of hospitalized patients are transferred to ICU, and most of them (aroudnd 70 percent) receive mechanical ventilation. In Mexico only 8.8 percent of hospitalized patients enter the ICU (regardless of whether they tested positive to COVID19 or not). The time from onset to death is about 15 days in the US, while in Mexico it is 9.8. It is important to note that this comparisons may reflect important differences in the populations of both countries, but they are also likely to relect some differences related to the quality of care.
 
-The statistical models 
+The statistical models I have estimated should not be used for any causal inference. They do not support, nor do I wish to make any claims about the reasons why death rates are higher in some places than in others, or that some variables are associated (either positively or negatively) with the probability of death. They should be thought of as relatively sophisticated cross tabs, or descriptive statistical tables, that seek to highlight a complex and interrelated set of processes by conditioning the table on various individual or aggregate level characteristics. 
 
-The graphs are the estimated CFR for both positive and negative (or pending) test patients, according to 
-various correlates also included in the dataset. It is very important to note that finding a correlation
+The graphs provide the estimated CFR for both positive and negative (or pending) test patients, according to 
+various correlates also included in the dataset. It is very important to reiterate that finding a correlation
 in this type of data is no evidence of a causal relationship. This should be particularly clear when 
 considering that intubation, hospital care in an ICU or having an initial diagnosis of pneumonia are all 
-positively correlated with death, but that cannot be interpreted as meaning that urgent care interventions
-increase the likelihood of dying: the relationship reveals the very strong selection effects that prevail
-throughout all this data: a patient only enters the sample if she is seeking care, and more seriously ill
+positively correlated with death. That cannot be interpreted as meaning that urgent care interventions
+increase the likelihood of dying: the relationship reveals, instead, the very strong selection effects that prevail
+throughout all this data. A patient only enters the sample if she is seeking care, and more seriously ill
 patients are more likely to require extraordinary measures, but they may still die, notwithstanding the care
-they receive.
+they receive, and hence those correlations with intubation or ICU treatment.
 
 I am not particularly interested or competent to analyze the medical aspects of the comorbidity factors. However, 
 including them in a statistical model is important because they are a large part of what accounts for an
 eventual fatality. What interests me are the differences in institutional performance as exhibited by state
-level fixed effects and the institutional makeup of health institutions in Mexico.
+level fixed effects and the institutional makeup of health institutions in Mexico. This is not the place to explain the complexity of the Mexican health system, but in an extreme simplification one can think of three pillars, one based on the Instituto Mexicano del Seguro Social (IMSS), where social security benefits are provided, including health, to workers and their families on the basis of the contributions they and the firms that employ them make to the national health system. Federal public sector employees, and many employees from the public sector at other levels of government have equivalent coverage through ISSSTE. IMSS also administers a very important system of clinics in rural areas, that are now labeled as part of the Bienestar system, which attend rural patients regardless of coverage (derechohabiencia). The other public health system is provided through what used to be the SSA clinics, now labeled as INSABI (https://www.gob.mx/insabi), variously administered by the federal or the state level of government. For Mexican rich patients there is also a system of private health establishments, which provides care usually on the basis of private health insurance. Beyond these three pillars, there are also various health establishments that may be run by the Red Cross, state or municipal governments and some Universities. For an account of the Mexican health system that focuses mostly on the reforms before the current administration see the book by Laura Flamand and Carlos Moreno Jaimes (https://books.google.com/books?id=UxCaBgAAQBAJ&lpg=PT7&ots=lCLObhfHUy&dq=laura%20flamand%20y%20moreno%20libro&pg=PA1#v=onepage&q&f=false)
 
 Although more sophisticated modelling choices are possible, the simple logits allow for a clear visualization of 
-the main patterns and some indication of strong differential institutional performance.
+the main patterns and some indication of strong differential institutional performance. In contrast to an OLS model, the logit takes into account that the distribution of the dependent variable is dichotomous, taking only the value of 1 when there is a death and 0 otherwise. Since deaths are (fortunately) not so frequent, even among patients contracting COVID19, an OLS model does not fit well the characteristics of the distribution. However logit models provide coefficients in the form of log odds ratios, which are difficult to interpret. In order to help with interpretation, the graphs provide the estimates that are provided by the model as probabilities of death under various scenarios given by the independent variables. All the code needed to run the estimates and visualize the graphs (in STATA) is provided in this repository.
 
 ![CFR Age and Gender](/Demography14.png)
 
-The simplest estimation only uses two sociodemographic variables, namely age and gender, as determinants of the CFR. The simulation of those coefficients is presented in the first graph, which presents the predicted value of the probability of death depending on whether the COVID19 test result was negative (or pending) or positive. In the update of the dataset until June 11 there were 15,944 deaths of positive cases, but there were an additional 6,419 deaths of patients seeking care for serious acute respiratory infections (Infeccion Respiratoria Aguda Grave, IRAG) which are part of the dataset. It is important to include those negative (or pending cases) given that they are potentially false negatives or deaths that occured too soon (often on the day of admission) to register test results. 
+The simplest estimation one can make only uses two sociodemographic variables, namely age and gender, as determinants of the CFR. The simulation of those coefficients is presented in the first graph, which presents the predicted value of the probability of death depending on whether the COVID19 test result was negative (or pending) or positive. In the update of the dataset until June 11 there were 15,944 deaths of positive cases, but there were an additional 6,419 deaths of patients seeking care for serious acute respiratory infections (Infeccion Respiratoria Aguda Grave, IRAG) which are part of the dataset. It is important to include those negative (or pending cases) given that they are potentially false negatives or deaths that occured too soon (often on the day of admission) to register test results. 
 
 In a more complete model the co-morbidity factors play an important role as a risk factor or a conditining variable that may increase the likelihood of death. The models that include those individual level correlates are simulated in the next set of graphs. Those co-morbidities are by now rather well know, not just from the case of Mexico but since the first analysis of data coming from China and Italy were done. It is clear that renal chronic conditions, inmunosupression and diabetes might play an important role in how the disease affects different patients. Smoking does not show up in the Mexican data as a significant factor afecting the risk of the death. Ths risk is not any different for preganant women (unreported in the graphs). 
 
