@@ -1,6 +1,4 @@
-# covid19mexico
-
-Patterns of COVID-19 cases and mortality in Mexico 
+# Case Mortality of COVID-19 patients in Mexico 
 
 Since April 14 I have been keeping track of the data released by the Federal Government of Mexico of
 information regarding COVID-19 tests for patients seeking care in the national health system, including
