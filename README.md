@@ -38,6 +38,10 @@ Perhaps the most important shortcoming of the public database is that it does no
 
 # Analysis of Case Fatality Rates in Mexico
 
+The first thing to note regarding the Mexican database is that it exhibits a very severe disease as compared, for example to US planning scenario parameters considered by the CDC. The arrival of patients seeking care is not too different from that of the US: 43.3 percent of the patients seek care after less than two days with symptoms, 46.5 percent within 3 to 7 days, and only 10.2 percent come to seek care after 8 days of symptoms. However, the time to hospitalization is very short: the average patient in Mexico, regardless of age, is hospitalized in 3.6 days from the onset of disease (standard deviation 3.5 days), while this figure is about seven days. We do not know in the Mexican public data how many days patients are hospitalized, nor how many days it takes for them to be transferred to an ICU, although this information must be part of the modelling exercises being performed by Mexican scientists to estimate hospital bed and ICU demand. In the US more than 20 percent of hospitalized patients are transferred to ICU, and most of them (aroudnd 70 percent) receive mechanical ventilation. In Mexico only 8.8 percent of hospitalized patients enter the ICU (regardless of whether they tested positive to COVID19 or not). The time from onset to death is about 15 days in the US, while in Mexico it is 9.8. It is important to note that this comparisons may reflect important differences in the populations of both countries, but they are also likely to relect some differences related to the quality of care.
+
+The statistical models 
+
 The graphs are the estimated CFR for both positive and negative (or pending) test patients, according to 
 various correlates also included in the dataset. It is very important to note that finding a correlation
 in this type of data is no evidence of a causal relationship. This should be particularly clear when 
