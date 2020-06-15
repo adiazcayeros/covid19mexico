@@ -46,6 +46,8 @@ todos estos casos en relación a COVID-19 en México”. (2)
 
 ![CFR por Comorbilidad](/Comorbilidad14.png)
 
+![CFR Logit Estimates](/covidmexJune11.pdf)
+
 Los investigadores rápidamente aprovecharon la nueva información para ofrecer 
 visualizaciones de diversos tipos, mostrando los patrones de dispersión territorial. Se puede 
 estudiar uno de los principales retos que se enfrentará durante las próximas semanas por 
