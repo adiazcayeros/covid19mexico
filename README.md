@@ -1,12 +1,13 @@
 # covid19mexico
-Analysis of covid19 individual level cases and tested patients 
+
+Patterns of COVID-19 cases and mortality in Mexico 
 
 Since April 14 I have been keeping track of the data released by the Federal Government of Mexico of
 information regarding COVID-19 tests for patients seeking care in the national health system, including
 both public and private hospitals and clinics. The database has been growing very quickly, as the 
 testing capacity of the Mexican government has been ramped up. 
 
-As or May 23 the data includes almost 216 thousand cases that form the basis of study for the federal 
+As or June 14 the data includes more than 381 thousand cases that form the basis of study for the federal 
 strategy. It is important to note that this data has been readily released by the federal government 
 updated every day, and there is no reason to believe it is any different from the data they have been
 using to build their epidemiological models.
@@ -29,9 +30,10 @@ level fixed effects and the institutional makeup of health institutions in Mexic
 Although more sophisticated modelling choices are possible, the simple logits allow for a clear visualization of 
 the main patterns and some indication of strong differential institutional performance.
 
-![CFR Age and Gender](/Demography11.png)
+![CFR Age and Gender](/Demography14.png)
 
-Files labeled with no.11 have the updated information from May 23 with more than 215,656 patients
+Files labeled with no.14 have the updated information from June 11 with 381,129 patients
+Files labeled with no.11 have the updated information from May 23 with 215,656 patients
 
 En un importante ejercicio de transparencia, esencial en la actual crisis, las autoridades 
 sanitarias del Gobierno Federal en México liberaron el 14 de abril una base de datos llamada 
@@ -44,7 +46,7 @@ que hasta el momento han sido ya estudiadas y entradas a un protocolo de investi
 todos estos casos en relación a COVID-19 en México”. (2) 
 
 
-![CFR por Comorbilidad](/Comorbilidad11.png)
+![CFR por Comorbilidad](/Comorbilidad14.png)
 
 Los investigadores rápidamente aprovecharon la nueva información para ofrecer 
 visualizaciones de diversos tipos, mostrando los patrones de dispersión territorial. Se puede 
@@ -73,8 +75,8 @@ la relación entre intubación o terapia intensiva debería ser negativa en un m
 identificado, este es exactamente el signo contrario que el que arroja una estimación simplista 
 de carácter más bien inductivo. 
 
-![CFR by Sector Grave](/SectorGrave11.png)
-![CFR by Sector No Grave](/SectorNoGrave11.png)
+![CFR by Sector Grave](/SectorGrave14.png)
+![CFR by Sector No Grave](/SectorNoGrave14.png)
 
 No existe una manera contundente pare resolver el problema de variables omitidas. Pero se 
 pueden realizar algunos procesos estadísticos, siempre sujetos a error, que permitan atenuar 
@@ -86,8 +88,8 @@ entubamiento que sean una especie de experimento natural, a saber, casos que pod
 sido entubados en un escenario contra-factual, pero que no fueron entubados, por razones 
 exógenas al padecimiento. 
 
-![Residual CFR by Entidad Grave](/EntidadGrave11.png)
-![Residual CFR by Entidad No Grave](/EntidadNoGrave11.png)
+![Residual CFR by Entidad Grave](/EntidadGrave14.png)
+![Residual CFR by Entidad No Grave](/EntidadNoGrave14.png)
 
 (1) La base está disponible en la siguiente liga (consultada el 17 de abril): 
 https://datos.gob.mx/busca/dataset/informacion-referente-a-casos-covid-19-en-mexico
