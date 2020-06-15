@@ -32,15 +32,15 @@ the main patterns and some indication of strong differential institutional perfo
 
 The simplest estimation only uses two sociodemographic variables, namely age and gender, as determinants of the CFR. The simulation of those coefficients is presented in the first graph, which presents the predicted value of the probability of death depending on whether the COVID19 test result was negative (or pending) or positive. In the update of the dataset until June 11 there were 15,944 deaths of positive cases, but there were an additional 6,419 deaths of patients seeking care for serious acute respiratory infections (Infeccion Respiratoria Aguda Grave, IRAG) which are part of the dataset. It is important to include those negative (or pending cases) given that they are potentially false negatives or deaths that occured too soon (often on the day of admission) to register test results. 
 
-In a more complete model the co-morbidity factors play an important role as a risk factor or a conditining variable that may increase the likelihood of death. The models that include those individual level correlates are simulated in the next set of graphs
+In a more complete model the co-morbidity factors play an important role as a risk factor or a conditining variable that may increase the likelihood of death. The models that include those individual level correlates are simulated in the next set of graphs. Those co-morbidities are by now rather well know, not just from the case of Mexico but since the first analysis of data coming from China and Italy were done. It is clear that renal chronic conditions, inmunosupression and diabetes might play an important role in how the disease affects different patients. Smoking does not show up in the Mexican data as a significant factor afecting the risk of the death. Ths risk is not any different for preganant women (unreported in the graphs). 
 
 ![CFR por Comorbilidad](/Comorbilidad14.png)
 
-I also present a set of models that include institutional variables related to the state where the patient has reported his or her residence, and the type of health establishment where the patient receives treatment. 
+I also present a set of models that include institutional variables related to the state where the patient has reported his or her residence, and the type of health establishment where the patient receives treatment. The image below presents the basic layout of the logit models, but please consult the full table in the pdf included in the repository. 
 
 ![CFR Logit Estimates](/covidmexJune11.jpg)
 
-Intubation and ICU care are not very common in the dataset. Hence the extreme example of a seriously ill patient may not be estimated with as much precision as the other correlates. 
+Many health interventions save lives. It is imporant to note that while the inclusion of hospitalization (instead of ambulatory care), being admitted in the ICU or intubation and having a clinical diagnosis of pneumonia all ara associated with a larger CFR, this does not mean that there is a causal relationship. More likelty these are selection effects. Intubation and ICU care are not very common in the dataset. Hence the extreme example of a seriously ill patient may not be estimated with as much precision as the other correlates. 
 
 Death	Negativo   Positivo	Total
 		
@@ -49,14 +49,22 @@ Death	Negativo   Positivo	Total
 		
 Total	982       1,145	      2,127 
 
-
 ![CFR by Sector Grave](/SectorGrave14.png)
+
+Institutional differences among the various health establishments in Mexico are rather strong, particularly for IMSS and Private hospitals. These may be completely driven by selection effects, given that the characteristics of patients being admitted into each type of health establishment may be quite different: richer, healtheir and less serious cases may be arriving to private hospitals, while much more seriously ill, including uninsured patients may be treated in IMSS hospitals and clinics. But it is possible that some of the differences among institutions are driven by the quality of care and the resources available in each type of institution. There seem to be also some differences in the quality of care among ISSSTE and other hospitals depending on whether the patient has tested positive to COVID19, and the degree of seriousness of the case. 
+
 ![CFR by Sector No Grave](/SectorNoGrave14.png)
 
+The estimation also includes variables (for which I do not provide graphical visualizations) that may relate to learning to treat the disease and how seriously ill patients arrive to seek care. There is a small trend in which patients admitted at later dates are less likely to die, although this could be an effect of the way in which testing has increased the size of the denominator; and there is no evidence suggesting that patients with longer periods since the onset of their sympthoms are more likelty to die.   
 
-![Residual CFR by Entidad Grave](/EntidadGrave14.png)
-![Residual CFR by Entidad No Grave](/EntidadNoGrave14.png)
+![Fixed Effect CFR by Entidad Grave](/EntidadGrave14.png)
+![Fixed Effect CFR by Entidad No Grave](/EntidadNoGrave14.png)
 
+The models can also include a fixed effect by state.
+
+Finally, in this update I am able to provide, given that a third of the dataset comes from the metropolitan area of Mexico City, municipal level fixed effects for the Alcaldias and Municipalities in the metropolitan area of Mexico City. Those estimates only include patients admitted into the hospitals and clinics in Estado de Mexico and CDMX, and providing municipal fixed effects according to their place of residence.
+
+![Fixed Effect CFR by Alcaldia(/AlcaldiaCDMX14.png)
 
 Files labeled with no.14 have the updated information from June 11 with 381,129 patients
 
