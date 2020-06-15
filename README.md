@@ -12,7 +12,12 @@ using to build their epidemiological models. It does not include infected indivi
 
 The severity of COVID19 in Mexico can be measured, albeit imperfectly, through what is known as the Case Fatality Ratio (CFR). The CDC defines Symptomatic CFR as follows:
 
-	Symptomatic Case Fatality Ratio: The number of symptomatic individuals who die of the disease among all individuals experiencing symptoms from the infection. This parameter is not necessarily equivalent to the number of reported deaths per reported cases, because many cases and deaths are never confirmed to be COVID-19, and there is a lag in time between when people are infected and when they die. This parameter reflects the existing standard of care and may be affected by the introduction of new therapeutics (https://www.cdc.gov/coronavirus/2019-ncov/hcp/planning-scenarios.html).
+	Symptomatic Case Fatality Ratio: The number of symptomatic individuals who die of the disease among all individuals
+	experiencing symptoms from the infection. This parameter is not necessarily equivalent to the number of reported
+	deaths per reported cases, because many cases and deaths are never confirmed to be COVID-19, and there is a lag in
+	time between when people are infected and when they die. This parameter reflects the existing standard of care and may
+	be affected by the introduction of new therapeutics 
+	(https://www.cdc.gov/coronavirus/2019-ncov/hcp/planning-scenarios.html).
 
 The dataset of patients who have been tested for COVID19 in Mexico is generated through two different processes. The first one is a systematic sample, collected through the 475 so called USMER clinics for ambulantory patients with mild symptoms, within the epidemiological surveillance system (SISVEFLU, now called SISVER, established after the 2009 H1N1 pandemic). The system collects a test for every tenth patient, regardless of the seriousness of their symptoms. The patient does need to be been seeking care for a light respiratory infection, with signs of cough, fever or headache. In the serious acute respiratory infections, accompanied by difficulty breathing (Infección Respiratoria Aguda Grave, IRAG), the system establishes that all patients in USMER clinics must be tested. A third of the data (36.44 percent) comes from these USMER hospitals and clinics. For the rest of medical establishments in the country, a patient is tested if they fulfill the definition of a suspicious viral respiratory disease case, according to a simple algorithm. In all cases health providers fill out a format called "Formato de Estudio de Caso Sospechoso de Enfermedad Respiratoria Viral", which includes the information that the government has released publicly. 
 
