@@ -64,7 +64,7 @@ The models can also include a fixed effect by state.
 
 Finally, in this update I am able to provide, given that a third of the dataset comes from the metropolitan area of Mexico City, municipal level fixed effects for the Alcaldias and Municipalities in the metropolitan area of Mexico City. Those estimates only include patients admitted into the hospitals and clinics in Estado de Mexico and CDMX, and providing municipal fixed effects according to their place of residence.
 
-![Fixed Effect CFR by Alcaldia(/AlcadldiaCDMX14.png)
+![Fixed Effect CFR by Alcaldia](/AlcadldiaCDMX14.png)
 
 Files labeled with no.14 have the updated information from June 11 with 381,129 patients
 
