@@ -5,10 +5,16 @@ information regarding COVID-19 tests for patients seeking care in the national h
 both public and private hospitals and clinics. The database has been growing very quickly, as the 
 testing capacity of the Mexican government has been ramped up. 
 
-As or June 11 the data includes more than 381 thousand cases that form the basis of study for the federal 
+As or June 11 the dataset includes more than 381 thousand cases that form the basis of study for the federal 
 strategy. It is important to note that this data has been readily released by the federal government 
-updated every day, and there is no reason to believe it is any different from the data they have been
-using to build their epidemiological models.
+and updated every day, and there is no reason to believe it is any different from the data they have been
+using to build their epidemiological models. It does not include infected individuals who do not seek care, and given the relative paucity of testing in Mexico, it is likely to have very few asymptomatic cases.
+
+The severity of COVID19 in Mexico can be measured, albeit imperfectly, through what is known as the Case Fatality Ratio (CFR). The CDC defines Symptomatic CFR as follows:
+
+	Symptomatic Case Fatality Ratio: The number of symptomatic individuals who die of the disease among all individuals experiencing symptoms from the infection. This parameter is not necessarily equivalent to the number of reported deaths per reported cases, because many cases and deaths are never confirmed to be COVID-19, and there is a lag in time between when people are infected and when they die. This parameter reflects the existing standard of care and may be affected by the introduction of new therapeutics (https://www.cdc.gov/coronavirus/2019-ncov/hcp/planning-scenarios.html).
+
+The dataset of patients who have been tested for COVID19 in Mexico is generated through two different processes. The first one is a systematic sample, collected through the 475 so called USMER clinics for ambulantory patient with mild symptoms, within the epidemiological surveillance system (SISVEFLU, now called SISVER, established after the 2009 H1N1 pandemic). The system collects a test for every tenth patient, regardless of the seriousness of the symptoms. The patient does need to be seeking care for a light respiratory infection, with signs of cough, fever or headache. In serious acute respiratory infections, accompanied by difficulty breathing (Infección Respiratoria Aguda Grave, IRAG), the system establishes that all patients in USMER clinics must be tested. A third of the data (36.44 percent) comes from those USMER hospitals and clinics. For the rest of medical establishments in the country, a patient is tested if they fulfill the definition of a suspicious viral respiratory disease. The health providers fill out a format called "Formato de Estudio de Caso Sospechoso de Enfermedad Respiratoria Viral" which includes the information that the government has released publicly. The public database includes most of the information in this format, with the exception of the personal identifiers, the classification of symptoms, and some treatment data, especially regarding use of antivirals. For some reason that is not clear, given that it does not involve any human subjects risk, the database is missing three sociodemographic characteristics asked in the format: 1) the self adscription as a member of an indigenous community (although the database does include the information on linguistic identification); occupation (which is an open question, so may be an issue of coding too many different answers) and whether the patient is an educator (¿pertenece a alguna institución educativa?)
 
 The graphs are the estimated CFR for both positive and negative (or pending) test patients, according to 
 various correlates also included in the dataset. It is very important to note that finding a correlation
