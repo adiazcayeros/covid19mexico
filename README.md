@@ -5,7 +5,7 @@ information regarding COVID-19 tests for patients seeking care in the national h
 both public and private hospitals and clinics. The database has been growing very quickly, as the 
 testing capacity of the Mexican government has been ramped up. 
 
-As or June 14 the data includes more than 381 thousand cases that form the basis of study for the federal 
+As or June 11 the data includes more than 381 thousand cases that form the basis of study for the federal 
 strategy. It is important to note that this data has been readily released by the federal government 
 updated every day, and there is no reason to believe it is any different from the data they have been
 using to build their epidemiological models.
@@ -30,7 +30,36 @@ the main patterns and some indication of strong differential institutional perfo
 
 ![CFR Age and Gender](/Demography14.png)
 
+The simplest estimation only uses two sociodemographic variables, namely age and gender, as determinants of the CFR. The simulation of those coefficients is presented in the first graph, which presents the predicted value of the probability of death depending on whether the COVID19 test result was negative (or pending) or positive. In the update of the dataset until June 11 there were 15,944 deaths of positive cases, but there were an additional 6,419 deaths of patients seeking care for serious acute respiratory infections (Infeccion Respiratoria Aguda Grave, IRAG) which are part of the dataset. It is important to include those negative (or pending cases) given that they are potentially false negatives or deaths that occured too soon (often on the day of admission) to register test results. 
+
+In a more complete model the co-morbidity factors play an important role as a risk factor or a conditining variable that may increase the likelihood of death. The models that include those individual level correlates are simulated in the next set of graphs
+
+![CFR por Comorbilidad](/Comorbilidad14.png)
+
+I also present a set of models that include institutional variables related to the state where the patient has reported his or her residence, and the type of health establishment where the patient receives treatment. 
+
+![CFR Logit Estimates](/covidmexJune11.jpg)
+
+Intubation and ICU care are not very common in the dataset. Hence the extreme example of a seriously ill patient may not be estimated with as much precision as the other correlates. 
+
+Death	Negativo   Positivo	Total
+		
+0	    722       533	        1,255 
+1	    260       612	        872 
+		
+Total	982       1,145	      2,127 
+
+
+![CFR by Sector Grave](/SectorGrave14.png)
+![CFR by Sector No Grave](/SectorNoGrave14.png)
+
+
+![Residual CFR by Entidad Grave](/EntidadGrave14.png)
+![Residual CFR by Entidad No Grave](/EntidadNoGrave14.png)
+
+
 Files labeled with no.14 have the updated information from June 11 with 381,129 patients
+
 Files labeled with no.11 have the updated information from May 23 with 215,656 patients
 
 En un importante ejercicio de transparencia, esencial en la actual crisis, las autoridades 
@@ -42,11 +71,6 @@ momento la información actualizada tenía, según las autoridades, 5,014 casos 
 como positivos, 332 defunciones atribuibles a esta enfermedad, y las “más de 37 mil personas 
 que hasta el momento han sido ya estudiadas y entradas a un protocolo de investigación de 
 todos estos casos en relación a COVID-19 en México”. (2) 
-
-
-![CFR por Comorbilidad](/Comorbilidad14.png)
-
-![CFR Logit Estimates](/covidmexJune11.pdf)
 
 Los investigadores rápidamente aprovecharon la nueva información para ofrecer 
 visualizaciones de diversos tipos, mostrando los patrones de dispersión territorial. Se puede 
@@ -75,9 +99,6 @@ la relación entre intubación o terapia intensiva debería ser negativa en un m
 identificado, este es exactamente el signo contrario que el que arroja una estimación simplista 
 de carácter más bien inductivo. 
 
-![CFR by Sector Grave](/SectorGrave14.png)
-![CFR by Sector No Grave](/SectorNoGrave14.png)
-
 No existe una manera contundente pare resolver el problema de variables omitidas. Pero se 
 pueden realizar algunos procesos estadísticos, siempre sujetos a error, que permitan atenuar 
 este problema mejorando el diseño de un estudio estadístico, buscando restringir la 
@@ -87,9 +108,6 @@ se puede traducir como un apareamiento, en que se busca comparar sólo casos de
 entubamiento que sean una especie de experimento natural, a saber, casos que podrían haber 
 sido entubados en un escenario contra-factual, pero que no fueron entubados, por razones 
 exógenas al padecimiento. 
-
-![Residual CFR by Entidad Grave](/EntidadGrave14.png)
-![Residual CFR by Entidad No Grave](/EntidadNoGrave14.png)
 
 (1) La base está disponible en la siguiente liga (consultada el 17 de abril): 
 https://datos.gob.mx/busca/dataset/informacion-referente-a-casos-covid-19-en-mexico
