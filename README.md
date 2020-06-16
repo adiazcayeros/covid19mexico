@@ -75,7 +75,7 @@ I also present a set of models that include institutional variables related to t
 
 ![CFR Logit Estimates](/covidmexJune11.jpg)
 
-Many health interventions save lives. It is imporant to note that while the inclusion of hospitalization (instead of ambulatory care), being admitted in the ICU or intubation and having a clinical diagnosis of pneumonia all are associated with a larger CFR, this does not mean that there is a causal relationship. More likely these are selection effects. Intubation and ICU care are not very common in the dataset. Hence the extreme example of a seriously ill patient may not be estimated with as much precision as the other correlates. 
+Many health interventions save lives. It is important to note that while the inclusion of hospitalization (instead of ambulatory care), being admitted in the ICU or intubation and having a clinical diagnosis of pneumonia all are associated with a larger CFR, this does not mean that there is a causal relationship. More likely these are selection effects. Intubation and ICU care are not very common in the dataset. Hence the extreme example of a seriously ill patient may not be estimated with as much precision as the other correlates. 
 
 ![CFR by Sector Grave](/SectorGrave14.png)
 
@@ -97,6 +97,8 @@ Finally, in this update I am able to provide, given that a third of the dataset 
 Files labeled with no.14 have the updated information from June 11 with 381,129 patients
 
 Files labeled with no.11 have the updated information from May 23 with 215,656 patients
+
+This is the original text I put on my first analysis back in April... in Spanish
 
 En un importante ejercicio de transparencia, esencial en la actual crisis, las autoridades 
 sanitarias del Gobierno Federal en México liberaron el 14 de abril una base de datos llamada 
