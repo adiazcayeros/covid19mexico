@@ -83,7 +83,7 @@ Institutional differences among the various health establishments in Mexico are 
 
 ![CFR by Sector No Grave](/SectorNoGrave14.png)
 
-The estimation also includes variables (for which I do not provide graphical visualizations) that may relate to learning to treat the disease and how seriously ill patients arrive to seek care. There is a small trend in which patients admitted at later dates are less likely to die, although this could be an effect of the way in which testing has increased the size of the denominator; and there is no evidence suggesting that patients with longer periods since the onset of their sympthoms are more likelty to die.   
+The estimation also includes variables (for which I do not provide graphical visualizations) that may relate to learning to treat the disease and how seriously ill patients arrive to seek care. There is a small trend in which patients admitted at later dates are less likely to die, although this could be an effect of the way in which testing has increased the size of the denominator; and there is no evidence suggesting that patients with longer periods since the onset of their symptoms are more likely to die.   
 
 ![Fixed Effect CFR by Entidad Grave](/EntidadGrave14.png)
 ![Fixed Effect CFR by Entidad No Grave](/EntidadNoGrave14.png)
