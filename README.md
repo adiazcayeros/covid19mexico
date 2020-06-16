@@ -75,14 +75,7 @@ I also present a set of models that include institutional variables related to t
 
 ![CFR Logit Estimates](/covidmexJune11.jpg)
 
-Many health interventions save lives. It is imporant to note that while the inclusion of hospitalization (instead of ambulatory care), being admitted in the ICU or intubation and having a clinical diagnosis of pneumonia all ara associated with a larger CFR, this does not mean that there is a causal relationship. More likelty these are selection effects. Intubation and ICU care are not very common in the dataset. Hence the extreme example of a seriously ill patient may not be estimated with as much precision as the other correlates. 
-
-Death	Negativo   Positivo	Total
-		
-0	    722       533	        1,255 
-1	    260       612	        872 
-		
-Total	982       1,145	      2,127 
+Many health interventions save lives. It is imporant to note that while the inclusion of hospitalization (instead of ambulatory care), being admitted in the ICU or intubation and having a clinical diagnosis of pneumonia all are associated with a larger CFR, this does not mean that there is a causal relationship. More likely these are selection effects. Intubation and ICU care are not very common in the dataset. Hence the extreme example of a seriously ill patient may not be estimated with as much precision as the other correlates. 
 
 ![CFR by Sector Grave](/SectorGrave14.png)
 
@@ -95,7 +88,7 @@ The estimation also includes variables (for which I do not provide graphical vis
 ![Fixed Effect CFR by Entidad Grave](/EntidadGrave14.png)
 ![Fixed Effect CFR by Entidad No Grave](/EntidadNoGrave14.png)
 
-The models can also include a fixed effect by state.
+The models can also include a fixed effect by state. The graphs presented above are different from a typical comparison of CFR by state because they take into account scenarios for a type of patient that remain fixed across states, and hence are not driving the differences being observed. That is, if a state had a different type of patient with more serious conditions this would influence the way in which it compares with another state registering less seriously ill patients. Concentrating attention on the idiosyncratic differences found in each state focuses attention on the way the disease is spreading over the territory, as well as potential differential performance by each state.
 
 Finally, in this update I am able to provide, given that a third of the dataset comes from the metropolitan area of Mexico City, municipal level fixed effects for the Alcaldias and Municipalities in the metropolitan area of Mexico City. Those estimates only include patients admitted into the hospitals and clinics in Estado de Mexico and CDMX, and providing municipal fixed effects according to their place of residence.
 
