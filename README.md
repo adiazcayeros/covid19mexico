@@ -5,7 +5,9 @@ This is the 19th update I make to the analysis of COVID-19 CFR in Mexico using t
 It is not easy to keep up with the many papers released, but see specifically the following:
 
 https://823875a3-4368-4de0-97fc-bc7207d66703.filesusr.com/ugd/dc1c3f_aaa7dc8fc5ff47d8b678593e36cc69d5.pdf
+
 https://www.medrxiv.org/content/10.1101/2020.05.24.20104414v1
+
 https://www.medrxiv.org/content/10.1101/2020.04.21.20074591v1
 
 # Case Mortality of COVID-19 patients in Mexico 
