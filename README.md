@@ -86,15 +86,13 @@ The simplest estimation one can make only uses two sociodemographic variables, n
 
 In a more complete model the co-morbidity factors play an important role as a risk factor or a conditioning variable that may increase the likelihood of death. The models that include those individual level correlates are simulated in the next set of graphs. Those co-morbidities are by now rather well know, not just from the case of Mexico but since the first analysis of data coming from China and Italy were done. It is clear that renal chronic conditions, immunosupressed and diabetes might play an important role in how the disease affects different patients. Smoking does not show up in the Mexican data as a significant factor afecting the risk of the death. Ths risk is not any different for pregnant women (unreported in the graphs). 
 
-![CFR por Comorbilidad](/ComorbEstab19.png)
+![CFR por Comorbilidad](/ComorbEstab22.png)
 
-I also present a set of models that include institutional variables related to the state where the patient has reported his or her residence, and the type of health establishment where the patient receives treatment. The image below presents the basic layout of the logit models, but please consult the full table in the pdf included in the repository. 
-
-![CFR Logit Estimates](/covidmexJune11.jpg)
+I also present a set of models that include institutional variables related to the state where the patient has reported his or her residence, and the type of health establishment where the patient receives treatment. Consult the full tables in the .tex files included in the repository. 
 
 Many health interventions save lives. It is important to note that while the inclusion of hospitalization (instead of ambulatory care), being admitted in the ICU or intubation and having a clinical diagnosis of pneumonia all are associated with a larger CFR, this does not mean that there is a causal relationship. More likely these are selection effects. Intubation and ICU care are not very common in the dataset. Hence the extreme example of a seriously ill patient may not be estimated with as much precision as the other correlates. 
 
-![CFR by Sector Grave](/usmer19.png)
+![CFR by Sector Grave](/usmer22.png)
 
 Institutional differences among the various health establishments in Mexico are rather strong, particularly for IMSS and Private hospitals. These may be completely driven by selection effects, given that the characteristics of patients being admitted into each type of health establishment may be quite different: richer, healtheir and less serious cases may be arriving to private hospitals, while much more seriously ill, including uninsured patients may be treated in IMSS hospitals and clinics. But it is possible that some of the differences among institutions are driven by the quality of care and the resources available in each type of institution. There seem to be also some differences in the quality of care among ISSSTE and other hospitals depending on whether the patient has tested positive to COVID19, and the degree of seriousness of the case. These institutional differences are presented here using only the USMER part of the dataset.
 
