@@ -119,7 +119,7 @@ The simplest estimation one can make only uses two sociodemographic variables, n
 
 In a more complete model the co-morbidity factors play an important role as a risk factor or a conditioning variable that may increase the likelihood of death. The models that include those individual level correlates are simulated in the next set of graphs. Those co-morbidities are by now rather well know, not just from the case of Mexico but since the first analysis of data coming from China and Italy were done. It is clear that renal chronic conditions, immunosupressed and diabetes might play an important role in how the disease affects different patients. Smoking does not show up in the Mexican data as a significant factor afecting the risk of the death. Ths risk is not any different for pregnant women (unreported in the graphs). 
 
-![CFR por Comorbilidad](Comorbidity/ComorbEstab23.png)
+![CFR por Comorbilidad](Comorbitity/ComorbEstab23.png)
 
 I also present a set of models that include institutional variables related to the state where the patient has reported his or her residence, and the type of health establishment where the patient receives treatment. Consult the full tables in the .tex files included in the repository. 
 
