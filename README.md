@@ -1,3 +1,29 @@
+# September 7 update
+
+I do not have a lot of time to update the repository, since classes are now starting. The good news is that the inflection point of August seems to be a solid trend in the current data. I have not updated all the graphs, but the .do file with syntax (in STATA) for the current data is available. I have also included a short .do file to create the temporal files, which are all put together for Excel graphs in the attached file CFRdaily9.0.xls
+
+In terms of some new visualizations, those interested in the Mexico City trends might want to see the graph showing how the share of deaths has now stabilized, as the epidemic decelerates (even though deaths and cases keep on growing), but CDMX has a more assertive testing policy than the rest of the country, so now the City has around 10 percent of the deaths, but 20 percent of the known tests / cases. 
+
+Notice I have also changed the way I label the graphs slightly, noting that we do not quite know when we speak of a test or a patient under study. This is important for patients that may be tested more than once, or might be registered in different ways at different times as their diseaase and treatment changes. It is the most plausible explanation for the observed patterns of patients disappearing sometimes when the daily update of the the dataset is done by the Mexican government.
+
+![Mexico City Residents Compared to Rest of the Country](/CDMXShareSept7.jpg)
+
+I have shortened the Positivity graph to start in April so it is more obvious how stubbornly high the rate has remained.
+
+![Positivity Over Time](/PositivitySept7.jpg)
+
+The years of life lost continues being a good metric of the cost of the epidemic, although the good news is that younger patients are surviving more often now.
+
+![Years of Life Lost Over Time](/YLLSept7.jpg)
+
+And although the CFR trends seem to be positive, do keep in mind that even for a regular influenza these are very high death rates, suggesting false negatives, and that there are very large differences across health establishment (although the usual caveat I have made before keeps on being important, in that IMSS probably gets the most seriously ill cases)
+
+![CFR Over Time](/CFRSept7.jpg)
+
+![CFR by Health Establishment](/CFREstablecSept7)
+
+Stay safe by using facial covering, practice social distancing if you can, and limiting the network of your contacts. This is not over, we will have cases and deaths for some time still.
+
 # August 28 update
 
 The good news is that I am more confident today that Mexico is at an inflection point in terms of the evolution of the epidemic. This has been difficult to infer in previous week due to the delay in reporting of cases and tests. But with the data released on August 28, there seems to be a firm trend in August that shows improvements in the CFR and the positivity rate, even though less testing is being performed. Whether this respite will continue is still to be seen, and depends probably on the way the pandemic evolves in territories where it has thus far been less present. A lot of the improvements are attributable to changes in the metropolitan area of Mexico City, where the CFR has been radically reduced. I now include a graph of that temporal trend. And there is a .do file with collapses into time series (even though I have not automated the production of graphs, which I keep on doing in Excel, forgive me for the primitive method). 
@@ -21,7 +47,7 @@ Elsewhere, I have shown the trends in the CFR and the Positivity trend. https://
 
 With the upadated data one can see that testing has slowed down slightly over the past weeks, and that the positivity rate in Mexico remains one of the highst in the world, still above 50 percent.
 
-![CFR Over Time](/PositivityDailyAug28.jpg)
+![Positivity Over Time](/PositivityDailyAug28.jpg)
 
 
 # Case Mortality of COVID-19 patients in Mexico 
