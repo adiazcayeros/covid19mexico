@@ -20,7 +20,7 @@ And although the CFR trends seem to be positive, do keep in mind that even for a
 
 ![CFR Over Time](/CFRSept7.jpg)
 
-![CFR by Health Establishment](/CFREstablecSept7)
+![CFR by Health Establishment](/CFREstablecSept7.jpg)
 
 Stay safe by using facial covering, practice social distancing if you can, and limiting the network of your contacts. This is not over, we will have cases and deaths for some time still.
 
