@@ -4,9 +4,13 @@ I do not have a lot of time to update the repository, since classes are now star
 
 In terms of some new visualizations, those interested in the Mexico City trends might want to see the graph showing how the share of deaths has now stabilized, as the epidemic decelerates (even though deaths and cases keep on growing), but CDMX has a more assertive testing policy than the rest of the country, so now the City has around 10 percent of the deaths, but 20 percent of the known tests / cases. 
 
+![Mexico City Residents Compared to Rest of the Country](CFR/CDMXShareSept7.jpg)
+
 Notice I have also changed the way I label the graphs slightly, noting that we do not quite know when we speak of a test or a patient under study. This is important for patients that may be tested more than once, or might be registered in different ways at different times as their diseaase and treatment changes. It is the most plausible explanation for the observed patterns of patients disappearing sometimes when the daily update of the the dataset is done by the Mexican government.
 
-![Mexico City Residents Compared to Rest of the Country](CFR/CDMXShareSept7.jpg)
+There is also now a graph with the CFR estimated for a seriously ill patient from IRAG with data only over the past 60 days. There has been an improvement in care, which is statistically significant in terms of, for example, the lengthening of time a patient who eventually dies stays alive when admitted in the ICU or intubated. This is similar to what happened in Europe or has happened in the US as medical treatment has found through trial and error some practices of care that improve the chance of survival.
+
+![CFR for Seriously Ill Patient by Health Establishment](/60days24grave.jpg)
 
 I have shortened the Positivity graph to start in April so it is more obvious how stubbornly high the rate has remained.
 
