@@ -10,7 +10,7 @@ Notice I have also changed the way I label the graphs slightly, noting that we d
 
 There is also now a graph with the CFR estimated for a seriously ill patient from IRAG with data only over the past 60 days. There has been an improvement in care, which is statistically significant in terms of, for example, the lengthening of time a patient who eventually dies stays alive when admitted in the ICU or intubated. This is similar to what happened in Europe or has happened in the US as medical treatment has found through trial and error some practices of care that improve the chance of survival.
 
-![CFR for Seriously Ill Patient by Health Establishment](/60days24grave.jpg)
+![CFR for Seriously Ill Patient by Health Establishment](/60days24grave.png)
 
 I have shortened the Positivity graph to start in April so it is more obvious how stubbornly high the rate has remained.
 
