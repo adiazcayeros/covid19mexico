@@ -6,11 +6,11 @@ In terms of some new visualizations, those interested in the Mexico City trends 
 
 Notice I have also changed the way I label the graphs slightly, noting that we do not quite know when we speak of a test or a patient under study. This is important for patients that may be tested more than once, or might be registered in different ways at different times as their diseaase and treatment changes. It is the most plausible explanation for the observed patterns of patients disappearing sometimes when the daily update of the the dataset is done by the Mexican government.
 
-![Mexico City Residents Compared to Rest of the Country](4. CFR Graphs and Models/CDMXShareSept7.jpg)
+![Mexico City Residents Compared to Rest of the Country](CFR/CDMXShareSept7.jpg)
 
 I have shortened the Positivity graph to start in April so it is more obvious how stubbornly high the rate has remained.
 
-![Positivity Over Time](../1. Daily Graphs/PositivitySept7.jpg)
+![Positivity Over Time](/Daily/PositivitySept7.jpg)
 
 The years of life lost continues being a good metric of the cost of the epidemic, although the good news is that younger patients are surviving more often now.
 
