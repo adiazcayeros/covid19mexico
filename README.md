@@ -10,7 +10,7 @@ Notice I have also changed the way I label the graphs slightly, noting that we d
 
 I have shortened the Positivity graph to start in April so it is more obvious how stubbornly high the rate has remained.
 
-![Positivity Over Time](1. Daily Graphs/PositivitySept7.jpg)
+![Positivity Over Time](../1. Daily Graphs/PositivitySept7.jpg)
 
 The years of life lost continues being a good metric of the cost of the epidemic, although the good news is that younger patients are surviving more often now.
 
