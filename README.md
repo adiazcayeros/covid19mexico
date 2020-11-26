@@ -1,3 +1,7 @@
+# November 23 update
+
+It has been more than two months since I updated the repository. I now include an\ Rmd document with some more details on the analysis and reorganizing my thinking about the evolution of the pandemic. This document supersedes the previous postings, hopefully suggesting what we have learned and where to go from here.
+
 # September 7 update
 
 I do not have a lot of time to update the repository, since classes are now starting. The good news is that the inflection point of August seems to be a solid trend in the current data. I have not updated all the graphs, but the .do file with syntax (in STATA) for the current data is available. I have also included a short .do file to create the temporal files, which are all put together for Excel graphs in the attached file CFRdaily9.0.xls
@@ -10,7 +14,7 @@ Notice I have also changed the way I label the graphs slightly, noting that we d
 
 There is also now a graph with the CFR estimated for a seriously ill patient from IRAG with data only over the past 60 days using only the USMER data. There has been an improvement in care, which is statistically significant in terms of, for example, the lengthening of time a patient who eventually dies stays alive when admitted in the ICU or intubated. This is similar to what happened in Europe or has happened in the US as medical treatment has found through trial and error some practices of care that improve the chance of survival. The graph is still tentative, and there are no USMER patients in private clinics and hospitals with positive COVID19 test results.
 
-![CFR for Seriously Ill Patient by Health Establishment](/60days24grave.png)
+![CFR for Seriously Ill Patient by Health Establishment](CFR/60days24grave.png)
 
 I have shortened the Positivity graph to start in April so it is more obvious how stubbornly high the rate has remained.
 
