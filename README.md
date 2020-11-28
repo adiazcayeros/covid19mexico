@@ -1,6 +1,19 @@
 # November 23 update
 
-It has been more than two months since I updated the repository. I now include an Rmd document with some more details on the analysis and reorganizing my thinking about the evolution of the pandemic. This document supersedes the previous postings, hopefully suggesting what we have learned and where to go from here.
+It has been more than two months since I updated the repository. I am now preparing an Rmd document which will include some more details on the analysis and reorganizing my thinking about the evolution of the pandemic. This document will supersede the previous postings, hopefully suggesting what we have learned and where to go from here.
+
+My simple policy recommendation at this stage can be expressed in the following manner:
+
+1. Mexico failed in its efforts to leverage it epidemiological surveillance systems and public health expertise to contain the epidemic. It is difficult to establish the correct counterfactual to what mortality Mexico would have experienced, had it coordinated a more persuasive and potent public message, starting with the President and other top public officials. With what we know about the virus now there is no question that adopting univerasl face covering and masks early on in the pandemic would have saved many lives. But other Latin American cases (like Chile and Argentina) suggest that even with stringent measures and more decisive Presidential leadership, Mexico could have failed to prevent the epidemic from spreading in the way it did. It is unlikely that Mexico could have performed like Cuba or Uruguay avoiding so many preventable deaths. But I firmly believe that the death toll could have been much lower, given the capacity of the Mexican health system in deploying doctors and nurses as well as preventive measures throuhghout the territory and its public health science infrastructure.
+
+2. The mask wearing mandate 
+
+
+Conclusion of ENSARS-COV-2 from the Instituto Nacional de Salud Publica
+
+https://www.insp.mx/avisos/5463-resultados-encuesta-ensars-coronavirus-ensanut.html?fbclid=IwAR0UurRQVmG6Upnej3DSPoXZvXdmZmOsEZTC5gEozrj51aNSm2RMCJmABFQ
+
+La estrategia mexicana para enfrentar la pandemia del covid-19,  se  ha  basado  en  la  Jor-nada de Sana Distancia, en donde un alto porcentaje de la población reconoció medidas como el uso de cubrebocas como la principal acción (más de dos terceras partes de la po-blación), aun cuando esta acción no fuera propuesta por el gobierno federal, como acción de mitigación, debido a la controversia de su utilidad y al posible uso inadecuado de la población" (p.34)
 
 # September 7 update
 
