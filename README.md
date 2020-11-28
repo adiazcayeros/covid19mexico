@@ -1,6 +1,6 @@
 # November 23 update
 
-It has been more than two months since I updated the repository. I now include an\ Rmd document with some more details on the analysis and reorganizing my thinking about the evolution of the pandemic. This document supersedes the previous postings, hopefully suggesting what we have learned and where to go from here.
+It has been more than two months since I updated the repository. I now include an Rmd document with some more details on the analysis and reorganizing my thinking about the evolution of the pandemic. This document supersedes the previous postings, hopefully suggesting what we have learned and where to go from here.
 
 # September 7 update
 
@@ -36,7 +36,7 @@ Stay safe by using facial covering, practice social distancing if you can, and l
 
 The good news is that I am more confident today that Mexico is at an inflection point in terms of the evolution of the epidemic. This has been difficult to infer in previous week due to the delay in reporting of cases and tests. But with the data released on August 28, there seems to be a firm trend in August that shows improvements in the CFR and the positivity rate, even though less testing is being performed. Whether this respite will continue is still to be seen, and depends probably on the way the pandemic evolves in territories where it has thus far been less present. A lot of the improvements are attributable to changes in the metropolitan area of Mexico City, where the CFR has been radically reduced. I now include a graph of that temporal trend. And there is a .do file with collapses into time series (even though I have not automated the production of graphs, which I keep on doing in Excel, forgive me for the primitive method). 
 
-![CFR Over Time in the Metropolitan Area of Mexico City](1. Daily Graphs/CFRDailyZMCMAug28.jpg)
+![CFR Over Time in the Metropolitan Area of Mexico City](Daily/CFRDailyZMCMAug28.jpg)
 
 The other new visualization that I am sharing is the evolution of the Years of Life Lost calculated for both positive and negative and pending COVID19 cases, which provides a sense of the magnitude of premature loss to the country.
 
