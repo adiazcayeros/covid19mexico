@@ -1,9 +1,36 @@
 ---
 title: "PoliticalEconomyCovid19Mexico"
 author: "Alberto Diaz-Cayeros"
-date: "11/28/2020"
+date: "`r Sys.Date()`"
 output: html_document
 ---
+
+To compile this file, install the following packages first:
+
+```{r install_packages, eval=FALSE }
+# Note: this R code is not executed by R, i.e. eval=FALSE #
+
+# Install packages first:
+install.packages("devtools")
+install.packages("knitr")
+
+# Install Stata Markdown via devtools
+library(devtools)
+devtools::install_github("hemken/Statamarkdown")
+```
+
+```{r libraries, echo=FALSE, message=FALSE}
+# Add required libraries
+library(Statamarkdown)
+library(knitr)
+library(tidyverse)
+library(foreign)
+
+# To fit R code when the file is knitted:
+opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
+```
+
+
 
 ## COVID19 Data Transparency
 
@@ -41,6 +68,8 @@ iCOVID19. UNAM visualizer from the Geography Institute https://gits.igg.unam.mx/
 
 Tablero Interactivo  Dashboard from the Instituto Nacional de Salud Publica Intellingence Unit (Lina Sofia Palacio Mejia and Juan Eugenio Hernandez Avila) which has the virtue of providing a Tasa de Ataque, which uses population as the denominator for positive detected cases, hence being less prone to be an artifact of various testing strategies. The dashboard is built in Tableau with necessary functionality for data download. 
 
+The Geography Institute at UNAM also maintains the Sistema de Informaciónn de la Red IRAG, the dashboard used from the Health Secretariat to know the hospital occupation at the state, municipal, health jurisdiction and hospital level https://gits.igg.unam.mx/red-irag-dashboard/reviewHome
+
 Transparencia COVID19. https://datos.cdmx.gob.mx/pages/covid19/ A remarkable exercise in transparency spearheaded by the Agencia Digital de Innovacion Publica ADIP in Mexico City, offering hopital dashboards and data at the neighborhood (colonia) level.
 
 Datavizero. https://datavizero.com/mapas-covid19 Baruch Sangines has been at the forefront of visualization tools and integration of GIS and data including neighborhoods in Mexico City.  
@@ -72,22 +101,26 @@ In fact, the "General Guidelines for Closed Public Spaces During COVID-19 issued
 
 
 
+
+
 ## Case Fatality Ratio
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
+```{stata cfr, echo=FALSE}
+clear
+version 14
+
+********************************************
+** CFR of COVID in Mexico City            **
+********************************************
+
+graph use "/Users/albertodiaz/Box/COVID19/Databases Mexico/DemographyCDMX32.gph"
+graph export "DemographyCDMX32.png", as(png) replace
+  
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+![CFR CDMX](DemographyCDMX32.png)
+## Something else
